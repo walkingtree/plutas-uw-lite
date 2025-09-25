@@ -1,11 +1,7 @@
 config:
-  - name: builds/plutas-uw/admin-app
+  - name: builds/plutas-uw-lite/admin-app
     build:
     - work-dir: ui/admin-app
       dockerfile: ui/admin-app/Dockerfile
-      image-name: plutas-uw/plutas-uw-admin-app
-  - name: builds/plutas-uw/license-management
-    build: 
-      - work-dir: services/license-management
-        dockerfile: services/license-management/Dockerfile
-        image-name: plutas-uw/license-management
+      image-name: plutas-uw-lite/plutas-uw-admin-app
+
